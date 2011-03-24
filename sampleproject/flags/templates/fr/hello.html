@@ -1,0 +1,30 @@
+{% extends "flags/base.html" %}
+
+{% block content %}
+
+Changer le langage ici: <i>( la liste sélectionnable ci-dessous est générée par "{% templatetag  openblock %} load flags_lib {% templatetag  closeblock %}{% templatetag  openblock %} flags_form {% templatetag  closeblock %}" )</i>
+{% load flags_lib %}{% flags_form %}
+<hr>
+<h1>Hello template (non traduit :-))</h1>
+Page test du composant <a href=http://code.google.com/p/django-flags/>django-flags</a>
+<p>Cette version est la version française. son chemin est <i>{{LANGUAGE_CODE}}/hello.html</i>.
+<br>Le langage courant est [{{LANGUAGE_CODE}}]
+
+{% load i18n %}
+<h2>Langages disponibles</h2>
+(List defined in settings.LANGUAGES)
+<p>
+<table>
+<tr>
+<th>Code</th><th>Drapeau</th><th>Langage</th><th>Langage traduit en français</th>
+</tr>
+{% for lang in LANGUAGES %}
+<tr>
+<th>{{ lang.0 }}</th>
+<td><img src="{{ flags_url }}flag_{{ lang.0 }}.jpg"></td>
+<td>{{ lang.0 }}</td><td>{% trans lang.1 %}</td>
+</tr>
+{% endfor %}
+</table>
+
+{% endblock %}

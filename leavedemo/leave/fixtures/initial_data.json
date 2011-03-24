@@ -1,0 +1,1011 @@
+[
+  {
+    "pk": 1, 
+    "model": "auth.group", 
+    "fields": {
+      "name": "manager", 
+      "permissions": []
+    }
+  }, 
+  {
+    "pk": 2, 
+    "model": "auth.group", 
+    "fields": {
+      "name": "secretary", 
+      "permissions": [
+        80
+      ]
+    }
+  }, 
+  {
+    "pk": 3, 
+    "model": "auth.group", 
+    "fields": {
+      "name": "employee", 
+      "permissions": []
+    }
+  }, 
+  {
+    "pk": 4, 
+    "model": "auth.group", 
+    "fields": {
+      "name": "leave", 
+      "permissions": [
+        31
+      ]
+    }
+  }, 
+  {
+    "pk": 1, 
+    "model": "auth.user", 
+    "fields": {
+      "username": "admin", 
+      "first_name": "", 
+      "last_name": "", 
+      "is_active": true, 
+      "is_superuser": true, 
+      "is_staff": true, 
+      "last_login": "2008-09-14 18:20:03", 
+      "groups": [], 
+      "user_permissions": [], 
+      "password": "sha1$c5ef3$1ffce0c6ab8bfbd1e56109cd8c32c07487eb8099", 
+      "email": "goflow@alwaysdata.net", 
+      "date_joined": "2007-07-22 12:28:10"
+    }
+  }, 
+  {
+    "pk": 3, 
+    "model": "auth.user", 
+    "fields": {
+      "username": "prefectus", 
+      "first_name": "", 
+      "last_name": "", 
+      "is_active": true, 
+      "is_superuser": false, 
+      "is_staff": true, 
+      "last_login": "2008-09-14 18:23:47", 
+      "groups": [
+        1, 
+        3, 
+        4
+      ], 
+      "user_permissions": [], 
+      "password": "sha1$42fea$803a874263ca061267131d93930793534307d4c9", 
+      "email": "", 
+      "date_joined": "2007-07-28 12:52:55"
+    }
+  }, 
+  {
+    "pk": 4, 
+    "model": "auth.user", 
+    "fields": {
+      "username": "primus", 
+      "first_name": "", 
+      "last_name": "", 
+      "is_active": true, 
+      "is_superuser": false, 
+      "is_staff": true, 
+      "last_login": "2008-09-14 18:23:19", 
+      "groups": [
+        3, 
+        4
+      ], 
+      "user_permissions": [], 
+      "password": "sha1$9fdf4$c44f36db2ee5a42733bc166d139b5778b08cf33e", 
+      "email": "goflow@alwaysdata.net", 
+      "date_joined": "2007-07-28 12:54:36"
+    }
+  }, 
+  {
+    "pk": 5, 
+    "model": "auth.user", 
+    "fields": {
+      "username": "secundus", 
+      "first_name": "", 
+      "last_name": "", 
+      "is_active": true, 
+      "is_superuser": false, 
+      "is_staff": true, 
+      "last_login": "2008-04-02 11:00:09", 
+      "groups": [
+        3, 
+        4
+      ], 
+      "user_permissions": [], 
+      "password": "sha1$59ac7$aeccc71edac9b47380036dd9f19c9383af68d557", 
+      "email": "", 
+      "date_joined": "2007-07-29 12:21:50"
+    }
+  }, 
+  {
+    "pk": 6, 
+    "model": "auth.user", 
+    "fields": {
+      "username": "tertius", 
+      "first_name": "", 
+      "last_name": "", 
+      "is_active": true, 
+      "is_superuser": false, 
+      "is_staff": true, 
+      "last_login": "2008-04-01 22:45:23", 
+      "groups": [
+        3, 
+        4
+      ], 
+      "user_permissions": [], 
+      "password": "sha1$7b269$cf1cfba01895fafd79473501180c0ee8b643ec60", 
+      "email": "", 
+      "date_joined": "2007-07-29 12:22:32"
+    }
+  }, 
+  {
+    "pk": 7, 
+    "model": "auth.user", 
+    "fields": {
+      "username": "quartus", 
+      "first_name": "", 
+      "last_name": "", 
+      "is_active": true, 
+      "is_superuser": false, 
+      "is_staff": true, 
+      "last_login": "2008-04-01 22:45:24", 
+      "groups": [
+        3, 
+        4
+      ], 
+      "user_permissions": [], 
+      "password": "sha1$15876$c4a36805344668f49614c3720acea5d4a055b0b2", 
+      "email": "", 
+      "date_joined": "2007-07-29 12:22:56"
+    }
+  }, 
+  {
+    "pk": 8, 
+    "model": "auth.user", 
+    "fields": {
+      "username": "socius", 
+      "first_name": "", 
+      "last_name": "", 
+      "is_active": true, 
+      "is_superuser": false, 
+      "is_staff": true, 
+      "last_login": "2008-09-14 18:18:51", 
+      "groups": [
+        2, 
+        3, 
+        4
+      ], 
+      "user_permissions": [], 
+      "password": "sha1$4150a$5126afea8fb33a1735de3d1afc3dd1bfb2b9f1e4", 
+      "email": "", 
+      "date_joined": "2007-07-29 12:23:20"
+    }
+  }, 
+  {
+    "pk": 9, 
+    "model": "auth.user", 
+    "fields": {
+      "username": "notarius", 
+      "first_name": "", 
+      "last_name": "", 
+      "is_active": true, 
+      "is_superuser": false, 
+      "is_staff": true, 
+      "last_login": "2008-09-14 18:23:56", 
+      "groups": [
+        2, 
+        3, 
+        4
+      ], 
+      "user_permissions": [], 
+      "password": "sha1$21f27$9bf9ace1d52ad4c74d199ba76bf711bd8fe74484", 
+      "email": "", 
+      "date_joined": "2007-07-29 12:24:05"
+    }
+  }, 
+  {
+    "pk": 10, 
+    "model": "auth.user", 
+    "fields": {
+      "username": "auto", 
+      "first_name": "", 
+      "last_name": "runs auto applications", 
+      "is_active": true, 
+      "is_superuser": false, 
+      "is_staff": false, 
+      "last_login": "2007-10-06 22:30:01", 
+      "groups": [], 
+      "user_permissions": [], 
+      "password": "sha1$724c9$c92da4ab8185ba00b89384e234e089a0e46dcb25", 
+      "email": "", 
+      "date_joined": "2007-10-06 22:30:01"
+    }
+  }, 
+  {
+    "pk": 1, 
+    "model": "leave.leaverequest", 
+    "fields": {
+      "requester": 4, 
+      "day_start": "2008-09-14", 
+      "reason": "a", 
+      "day_end": "2008-09-14", 
+      "reason_denial": "", 
+      "date": "2008-09-14 18:23:52", 
+      "type": "Vacation"
+    }
+  }, 
+  {
+    "pk": 1, 
+    "model": "leave.manager", 
+    "fields": {
+      "category": "supervisor", 
+      "user": 3, 
+      "users": [
+        3, 
+        4, 
+        5, 
+        6, 
+        7, 
+        8, 
+        9
+      ]
+    }
+  }, 
+  {
+    "pk": 2, 
+    "model": "leave.manager", 
+    "fields": {
+      "category": "secretary", 
+      "user": 9, 
+      "users": [
+        1, 
+        3, 
+        4, 
+        5, 
+        8
+      ]
+    }
+  }, 
+  {
+    "pk": 3, 
+    "model": "leave.manager", 
+    "fields": {
+      "category": "secretary", 
+      "user": 8, 
+      "users": [
+        6, 
+        7, 
+        9
+      ]
+    }
+  }, 
+  {
+    "pk": 1, 
+    "model": "leave.account", 
+    "fields": {
+      "category": "vacations", 
+      "user": 3, 
+      "days": 10
+    }
+  }, 
+  {
+    "pk": 2, 
+    "model": "leave.account", 
+    "fields": {
+      "category": "vacations", 
+      "user": 4, 
+      "days": 10
+    }
+  }, 
+  {
+    "pk": 3, 
+    "model": "leave.account", 
+    "fields": {
+      "category": "vacations", 
+      "user": 5, 
+      "days": 10
+    }
+  }, 
+  {
+    "pk": 4, 
+    "model": "leave.account", 
+    "fields": {
+      "category": "vacations", 
+      "user": 6, 
+      "days": 10
+    }
+  }, 
+  {
+    "pk": 5, 
+    "model": "leave.account", 
+    "fields": {
+      "category": "vacations", 
+      "user": 7, 
+      "days": 10
+    }
+  }, 
+  {
+    "pk": 6, 
+    "model": "leave.account", 
+    "fields": {
+      "category": "vacations", 
+      "user": 8, 
+      "days": 10
+    }
+  }, 
+  {
+    "pk": 7, 
+    "model": "leave.account", 
+    "fields": {
+      "category": "vacations", 
+      "user": 9, 
+      "days": 10
+    }
+  }, 
+  {
+    "pk": 12, 
+    "model": "leave.account", 
+    "fields": {
+      "category": "vacations", 
+      "user": 1, 
+      "days": 10
+    }
+  }, 
+  {
+    "pk": 6, 
+    "model": "workflow.activity", 
+    "fields": {
+      "kind": "standard", 
+      "push_application": 2, 
+      "description": "", 
+      "roles": [
+        2
+      ], 
+      "title": "UpdateHR", 
+      "process": 2, 
+      "autofinish": true, 
+      "join_mode": "and", 
+      "subflow": null, 
+      "application": 9, 
+      "split_mode": "and", 
+      "app_param": "", 
+      "autostart": false, 
+      "pushapp_param": ""
+    }
+  }, 
+  {
+    "pk": 7, 
+    "model": "workflow.activity", 
+    "fields": {
+      "kind": "standard", 
+      "push_application": 3, 
+      "description": "", 
+      "roles": [
+        3
+      ], 
+      "title": "Refinement", 
+      "process": 2, 
+      "autofinish": true, 
+      "join_mode": "xor", 
+      "subflow": null, 
+      "application": 17, 
+      "split_mode": "xor", 
+      "app_param": "{'ok_values':('Re-request', 'Withdraw request')}", 
+      "autostart": false, 
+      "pushapp_param": ""
+    }
+  }, 
+  {
+    "pk": 8, 
+    "model": "workflow.activity", 
+    "fields": {
+      "kind": "standard", 
+      "push_application": 1, 
+      "description": "", 
+      "roles": [
+        1
+      ], 
+      "title": "Approval", 
+      "process": 2, 
+      "autofinish": true, 
+      "join_mode": "and", 
+      "subflow": null, 
+      "application": 18, 
+      "split_mode": "xor", 
+      "app_param": "{'ok_values':('OK: Forward to secretary', 'Denied: Back to requester')}", 
+      "autostart": false, 
+      "pushapp_param": ""
+    }
+  }, 
+  {
+    "pk": 9, 
+    "model": "workflow.activity", 
+    "fields": {
+      "kind": "standard", 
+      "push_application": 3, 
+      "description": "", 
+      "roles": [], 
+      "title": "End", 
+      "process": 2, 
+      "autofinish": false, 
+      "join_mode": "xor", 
+      "subflow": null, 
+      "application": 11, 
+      "split_mode": "and", 
+      "app_param": "", 
+      "autostart": false, 
+      "pushapp_param": ""
+    }
+  }, 
+  {
+    "pk": 10, 
+    "model": "workflow.activity", 
+    "fields": {
+      "kind": "standard", 
+      "push_application": 2, 
+      "description": "", 
+      "roles": [
+        2
+      ], 
+      "title": "Begin", 
+      "process": 2, 
+      "autofinish": true, 
+      "join_mode": "and", 
+      "subflow": null, 
+      "application": 16, 
+      "split_mode": "xor", 
+      "app_param": "{'ok_values':('OK: Forward to supervisor', 'Denied: Back to requester')}", 
+      "autostart": false, 
+      "pushapp_param": ""
+    }
+  }, 
+  {
+    "pk": 11, 
+    "model": "workflow.activity", 
+    "fields": {
+      "kind": "standard", 
+      "push_application": null, 
+      "description": "", 
+      "roles": [
+        3
+      ], 
+      "title": "notification", 
+      "process": 3, 
+      "autofinish": true, 
+      "join_mode": "and", 
+      "subflow": null, 
+      "application": 15, 
+      "split_mode": "and", 
+      "app_param": "{'username':'admin'}", 
+      "autostart": true, 
+      "pushapp_param": ""
+    }
+  }, 
+  {
+    "pk": 12, 
+    "model": "workflow.activity", 
+    "fields": {
+      "kind": "standard", 
+      "push_application": null, 
+      "description": "", 
+      "roles": [], 
+      "title": "Information", 
+      "process": 4, 
+      "autofinish": true, 
+      "join_mode": "xor", 
+      "subflow": null, 
+      "application": 11, 
+      "split_mode": "and", 
+      "app_param": "", 
+      "autostart": false, 
+      "pushapp_param": ""
+    }
+  }, 
+  {
+    "pk": 13, 
+    "model": "workflow.activity", 
+    "fields": {
+      "kind": "standard", 
+      "push_application": 2, 
+      "description": "", 
+      "roles": [
+        2
+      ], 
+      "title": "Contr\u00f4le demande", 
+      "process": 4, 
+      "autofinish": true, 
+      "join_mode": "and", 
+      "subflow": null, 
+      "application": 16, 
+      "split_mode": "xor", 
+      "app_param": "{'ok_values':('OK: pour approbation', 'Refus\u00e9: \u00e0 corriger')}", 
+      "autostart": false, 
+      "pushapp_param": ""
+    }
+  }, 
+  {
+    "pk": 14, 
+    "model": "workflow.activity", 
+    "fields": {
+      "kind": "standard", 
+      "push_application": 1, 
+      "description": "", 
+      "roles": [
+        1
+      ], 
+      "title": "Approbation", 
+      "process": 4, 
+      "autofinish": true, 
+      "join_mode": "and", 
+      "subflow": null, 
+      "application": 18, 
+      "split_mode": "xor", 
+      "app_param": "{'ok_values':('OK: \u00e0 enregistrer', 'Refus\u00e9: \u00e0 modifier')}", 
+      "autostart": false, 
+      "pushapp_param": ""
+    }
+  }, 
+  {
+    "pk": 15, 
+    "model": "workflow.activity", 
+    "fields": {
+      "kind": "standard", 
+      "push_application": 3, 
+      "description": "", 
+      "roles": [
+        3
+      ], 
+      "title": "Correction", 
+      "process": 4, 
+      "autofinish": true, 
+      "join_mode": "xor", 
+      "subflow": null, 
+      "application": 17, 
+      "split_mode": "xor", 
+      "app_param": "{'ok_values':('Soumettre \u00e0 nouveau', 'Annuler')}", 
+      "autostart": false, 
+      "pushapp_param": ""
+    }
+  }, 
+  {
+    "pk": 16, 
+    "model": "workflow.activity", 
+    "fields": {
+      "kind": "standard", 
+      "push_application": 2, 
+      "description": "", 
+      "roles": [
+        2
+      ], 
+      "title": "Mise \u00e0 jour base", 
+      "process": 4, 
+      "autofinish": true, 
+      "join_mode": "and", 
+      "subflow": null, 
+      "application": 9, 
+      "split_mode": "and", 
+      "app_param": "", 
+      "autostart": false, 
+      "pushapp_param": ""
+    }
+  }, 
+  {
+    "pk": 2, 
+    "model": "workflow.process", 
+    "fields": {
+      "begin": 10, 
+      "end": 9, 
+      "description": "version using high level functions to minimize dev effort", 
+      "title": "leave", 
+      "enabled": true, 
+      "priority": 0, 
+      "date": "2008-04-01 17:40:39"
+    }
+  }, 
+  {
+    "pk": 3, 
+    "model": "workflow.process", 
+    "fields": {
+      "begin": null, 
+      "end": null, 
+      "description": "dummy process used to keep activities and transitions out of the active process", 
+      "title": "dummy", 
+      "enabled": true, 
+      "priority": 0, 
+      "date": "2007-10-08 21:49:41"
+    }
+  }, 
+  {
+    "pk": 4, 
+    "model": "workflow.process", 
+    "fields": {
+      "begin": null, 
+      "end": 12, 
+      "description": "gestion des absences: r\u00f4les employ\u00e9, secr\u00e9taire, manager", 
+      "title": "Gestion des absences", 
+      "enabled": true, 
+      "priority": 0, 
+      "date": "2008-04-29 21:34:46"
+    }
+  }, 
+  {
+    "pk": 1, 
+    "model": "workflow.application", 
+    "fields": {
+      "url": "apptools/choice_application", 
+      "suffix": "w"
+    }
+  }, 
+  {
+    "pk": 2, 
+    "model": "workflow.application", 
+    "fields": {
+      "url": "apptools/view_application", 
+      "suffix": "w"
+    }
+  }, 
+  {
+    "pk": 3, 
+    "model": "workflow.application", 
+    "fields": {
+      "url": "apptools/sendmail", 
+      "suffix": "w"
+    }
+  }, 
+  {
+    "pk": 9, 
+    "model": "workflow.application", 
+    "fields": {
+      "url": "hrform", 
+      "suffix": "w"
+    }
+  }, 
+  {
+    "pk": 11, 
+    "model": "workflow.application", 
+    "fields": {
+      "url": "finalinfo", 
+      "suffix": "w"
+    }
+  }, 
+  {
+    "pk": 14, 
+    "model": "workflow.application", 
+    "fields": {
+      "url": "checkstatus_auto", 
+      "suffix": null
+    }
+  }, 
+  {
+    "pk": 15, 
+    "model": "workflow.application", 
+    "fields": {
+      "url": "send_mail", 
+      "suffix": null
+    }
+  }, 
+  {
+    "pk": 16, 
+    "model": "workflow.application", 
+    "fields": {
+      "url": "checkstatus", 
+      "suffix": "w"
+    }
+  }, 
+  {
+    "pk": 17, 
+    "model": "workflow.application", 
+    "fields": {
+      "url": "refine", 
+      "suffix": "w"
+    }
+  }, 
+  {
+    "pk": 18, 
+    "model": "workflow.application", 
+    "fields": {
+      "url": "approvalform", 
+      "suffix": "w"
+    }
+  }, 
+  {
+    "pk": 1, 
+    "model": "workflow.pushapplication", 
+    "fields": {
+      "url": "route_to_supervisor"
+    }
+  }, 
+  {
+    "pk": 2, 
+    "model": "workflow.pushapplication", 
+    "fields": {
+      "url": "route_to_secretary"
+    }
+  }, 
+  {
+    "pk": 3, 
+    "model": "workflow.pushapplication", 
+    "fields": {
+      "url": "route_to_requester"
+    }
+  }, 
+  {
+    "pk": 8, 
+    "model": "workflow.transition", 
+    "fields": {
+      "precondition": null, 
+      "description": "", 
+      "process": 2, 
+      "output": 10, 
+      "input": 7, 
+      "condition": "Re-request", 
+      "name": "re_request"
+    }
+  }, 
+  {
+    "pk": 9, 
+    "model": "workflow.transition", 
+    "fields": {
+      "precondition": null, 
+      "description": "", 
+      "process": 2, 
+      "output": 9, 
+      "input": 7, 
+      "condition": "Withdraw request", 
+      "name": "cancel_request"
+    }
+  }, 
+  {
+    "pk": 10, 
+    "model": "workflow.transition", 
+    "fields": {
+      "precondition": null, 
+      "description": "", 
+      "process": 2, 
+      "output": 6, 
+      "input": 8, 
+      "condition": "OK: Forward to secretary", 
+      "name": "request_approved"
+    }
+  }, 
+  {
+    "pk": 11, 
+    "model": "workflow.transition", 
+    "fields": {
+      "precondition": null, 
+      "description": "", 
+      "process": 2, 
+      "output": 7, 
+      "input": 8, 
+      "condition": "Denied: Back to requester", 
+      "name": "not_approved"
+    }
+  }, 
+  {
+    "pk": 12, 
+    "model": "workflow.transition", 
+    "fields": {
+      "precondition": null, 
+      "description": "", 
+      "process": 2, 
+      "output": 9, 
+      "input": 6, 
+      "condition": "", 
+      "name": "tell_employee"
+    }
+  }, 
+  {
+    "pk": 13, 
+    "model": "workflow.transition", 
+    "fields": {
+      "precondition": null, 
+      "description": "", 
+      "process": 2, 
+      "output": 7, 
+      "input": 10, 
+      "condition": "Denied: Back to requester", 
+      "name": "send_to_refinement"
+    }
+  }, 
+  {
+    "pk": 14, 
+    "model": "workflow.transition", 
+    "fields": {
+      "precondition": null, 
+      "description": "", 
+      "process": 2, 
+      "output": 8, 
+      "input": 10, 
+      "condition": "OK: Forward to supervisor", 
+      "name": "send_to_approval"
+    }
+  }, 
+  {
+    "pk": 15, 
+    "model": "workflow.transition", 
+    "fields": {
+      "precondition": null, 
+      "description": "test timeout", 
+      "process": 3, 
+      "output": 11, 
+      "input": 10, 
+      "condition": "workitem.time_out(delay=1, unit='minutes')", 
+      "name": "begin_notification"
+    }
+  }, 
+  {
+    "pk": 1, 
+    "model": "workflow.userprofile", 
+    "fields": {
+      "notif_delay": 1, 
+      "notified": true, 
+      "last_notif": "2009-03-28 16:52:44", 
+      "nb_wi_notif": 1, 
+      "user": 1, 
+      "urgent_priority": 5, 
+      "web_host": "localhost:8000"
+    }
+  }, 
+  {
+    "pk": 2, 
+    "model": "workflow.userprofile", 
+    "fields": {
+      "notif_delay": 1, 
+      "notified": true, 
+      "last_notif": "2009-03-28 18:15:13", 
+      "nb_wi_notif": 1, 
+      "user": 9, 
+      "urgent_priority": 5, 
+      "web_host": "localhost:8000"
+    }
+  }, 
+  {
+    "pk": 3, 
+    "model": "workflow.userprofile", 
+    "fields": {
+      "notif_delay": 1, 
+      "notified": true, 
+      "last_notif": "2009-03-28 18:15:26", 
+      "nb_wi_notif": 1, 
+      "user": 3, 
+      "urgent_priority": 5, 
+      "web_host": "localhost:8000"
+    }
+  }, 
+  {
+    "pk": 4, 
+    "model": "workflow.userprofile", 
+    "fields": {
+      "notif_delay": 1, 
+      "notified": true, 
+      "last_notif": "2009-03-28 18:15:36", 
+      "nb_wi_notif": 1, 
+      "user": 4, 
+      "urgent_priority": 5, 
+      "web_host": "localhost:8000"
+    }
+  }, 
+  {
+    "pk": 5, 
+    "model": "workflow.userprofile", 
+    "fields": {
+      "notif_delay": 1, 
+      "notified": true, 
+      "last_notif": "2009-03-28 18:15:48", 
+      "nb_wi_notif": 1, 
+      "user": 7, 
+      "urgent_priority": 5, 
+      "web_host": "localhost:8000"
+    }
+  }, 
+  {
+    "pk": 6, 
+    "model": "workflow.userprofile", 
+    "fields": {
+      "notif_delay": 1, 
+      "notified": true, 
+      "last_notif": "2009-03-28 18:16:31", 
+      "nb_wi_notif": 1, 
+      "user": 5, 
+      "urgent_priority": 5, 
+      "web_host": "localhost:8000"
+    }
+  }, 
+  {
+    "pk": 7, 
+    "model": "workflow.userprofile", 
+    "fields": {
+      "notif_delay": 1, 
+      "notified": true, 
+      "last_notif": "2009-03-28 18:16:41", 
+      "nb_wi_notif": 1, 
+      "user": 8, 
+      "urgent_priority": 5, 
+      "web_host": "localhost:8000"
+    }
+  }, 
+  {
+    "pk": 8, 
+    "model": "workflow.userprofile", 
+    "fields": {
+      "notif_delay": 1, 
+      "notified": true, 
+      "last_notif": "2009-03-28 18:17:06", 
+      "nb_wi_notif": 1, 
+      "user": 6, 
+      "urgent_priority": 5, 
+      "web_host": "localhost:8000"
+    }
+  }, 
+  {
+    "pk": 9, 
+    "model": "workflow.userprofile", 
+    "fields": {
+      "notif_delay": 1, 
+      "notified": true, 
+      "last_notif": "2009-03-28 16:52:44", 
+      "nb_wi_notif": 1, 
+      "user": 10, 
+      "urgent_priority": 5, 
+      "web_host": "localhost:8000"
+    }
+  }, 
+  {
+    "pk": 1, 
+    "model": "graphics2.processimage", 
+    "fields": {
+      "process": 4, 
+      "file": "images/leave_workflow.png"
+    }
+  }, 
+  {
+    "pk": 1, 
+    "model": "graphics2.activityposition", 
+    "fields": {
+      "diagram": 1, 
+      "x": 72, 
+      "y": 334, 
+      "activity": 12
+    }
+  }, 
+  {
+    "pk": 2, 
+    "model": "graphics2.activityposition", 
+    "fields": {
+      "diagram": 1, 
+      "x": 208, 
+      "y": 100, 
+      "activity": 13
+    }
+  }, 
+  {
+    "pk": 3, 
+    "model": "graphics2.activityposition", 
+    "fields": {
+      "diagram": 1, 
+      "x": 329, 
+      "y": 185, 
+      "activity": 14
+    }
+  }, 
+  {
+    "pk": 4, 
+    "model": "graphics2.activityposition", 
+    "fields": {
+      "diagram": 1, 
+      "x": 111, 
+      "y": 179, 
+      "activity": 15
+    }
+  }, 
+  {
+    "pk": 5, 
+    "model": "graphics2.activityposition", 
+    "fields": {
+      "diagram": 1, 
+      "x": 223, 
+      "y": 289, 
+      "activity": 16
+    }
+  }
+]

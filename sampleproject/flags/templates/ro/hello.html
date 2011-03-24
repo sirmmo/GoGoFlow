@@ -1,0 +1,31 @@
+{% extends "flags/base.html" %}
+
+{% block content %}
+
+Schimbă limba aici: <i>( formularul este generat de "{% templatetag  openblock %} load flags_lib {% templatetag  closeblock %}{% templatetag  openblock %} flags_form {% templatetag  closeblock %}" )</i>
+{% load flags_lib %}{% flags_form %}
+<hr>
+<h1>Salut</h1>
+Pagina de test a componentei <a href=http://code.google.com/p/django-flags/>django-flags</a>
+<p>				
+Aceasta este versiunea în limba română. Calea ei este <i>{{LANGUAGE_CODE}}/hello.html</i>.
+<br>Limba curentă este [{{LANGUAGE_CODE}}]
+
+{% load i18n %}
+<h2>Limbi disponibile</h2>
+(Lista este definită în settings.LANGUAGES)
+<p>
+<table>
+<tr>
+<th>Cod</th><th>Steag</th><th>Limbă</th><th>Traducere</th>
+</tr>
+{% for lang in LANGUAGES %}
+<tr>
+<th>{{ lang.0 }}</th>
+<td><img src="{{ flags_url }}flag_{{ lang.0 }}.jpg"></td>
+<td>{{ lang.0 }}</td><td>{% trans lang.1 %}</td>
+</tr>
+{% endfor %}
+</table>
+
+{% endblock %}
