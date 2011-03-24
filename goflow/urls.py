@@ -4,8 +4,9 @@ from apptools.forms import DefaultAppStartForm
 from apptools.views import DefaultAppModel
 
 urlpatterns = patterns('django.contrib.auth.views.',
-    (r'^.*/logout/$', 'logout'),
-    (r'^.*/accounts/login/$', 'login', {'template_name':'goflow/login.html'}),
+# uncomment if you don't have a system using log-in/log-out
+#    (r'^.*/logout/$', 'logout'),
+#    (r'^.*/accounts/login/$', 'login', {'template_name':'goflow/login.html'}),
     (r'^apptools/', include('goflow.apptools.urls')),
     (r'^graph/', include('goflow.graphics.urls')),
 )
